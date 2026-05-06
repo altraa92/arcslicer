@@ -1,0 +1,6 @@
+[project]
+name = "arcslicer"
+version = "0.1.0"
+
+[programs]
+arcslicer = { path = "programs/arcslicer" }
