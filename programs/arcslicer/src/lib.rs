@@ -6,6 +6,11 @@ use anchor_spl::{
 pub mod state;
 use state::*;
 
+// Add these Arcium imports:
+use arcium_anchor::prelude::*;
+// This imports the circuit we just compiled!
+use encrypted_ixs::arcslicer_mxe::secure_slice_engine;
+
 // Keep YOUR generated ID here.
 declare_id!("75uhE7ybcaxboCBGC7j7hAX9N6oqY1PvearcyULUqxKi");
 
