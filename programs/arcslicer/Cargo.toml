@@ -23,6 +23,12 @@ custom-panic = []
 [dependencies]
 anchor-lang = "1.0.1"
 anchor-spl = "1.0.1"
+arcium-client = { version = "0.9.7", default-features = false }
+arcium-macros = "0.9.7"
+arcium-anchor = "0.9.7"
+arcis = "0.9.7"
+
+
 
 [dev-dependencies]
 litesvm = "0.10.0"

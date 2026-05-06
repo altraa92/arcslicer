@@ -111,9 +111,11 @@ function App() {
                   </section>
 
                   <div className="action-grid">
-                    <button className="launch-btn bg-purple-900/50 hover:bg-purple-800 border border-purple-500 text-white" onClick={initializeVault}>
-                      1: Initialize Vault <ArrowUpRight size={17} />
-                    </button>
+                    {!isParentInitialized && (
+                      <button className="launch-btn bg-purple-900/50 hover:bg-purple-800 border border-purple-500 text-white" onClick={initializeVault}>
+                        1: Initialize Vault <ArrowUpRight size={17} />
+                      </button>
+                    )}
                     <button className="launch-btn setup-btn bg-purple-600 hover:bg-purple-500 text-white disabled:opacity-50" onClick={turnCrank} disabled={!isParentInitialized}>
                       2: Turn Crank (Jitter) <ArrowUpRight size={17} />
                     </button>
